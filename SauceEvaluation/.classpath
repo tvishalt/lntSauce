@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-2.53.1.jar"/>
+	<classpathentry kind="lib" path="lib/testng-6.9.10.jar"/>
+	<classpathentry kind="lib" path="lib/sauce_testng-2.1.21.jar"/>
+	<classpathentry kind="lib" path="lib/sauce_java_common-2.1.21.jar"/>
+	<classpathentry kind="lib" path="lib/saucerest-1.0.34.jar"/>
+	<classpathentry kind="lib" path="lib/json-20160810.jar"/>
+	<classpathentry kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
