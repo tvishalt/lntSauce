@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 
 public class GuineaPigPage extends PageBase {
-
+//Test
 	@FindBy(id="unchecked_checkbox")
 	private WebElement uncheckedCheckbox;
 
