@@ -10,6 +10,7 @@ import java.util.UUID;
 
 import org.openqa.selenium.InvalidElementStateException;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
@@ -48,6 +49,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
          Each test should be verifying one piece of functionality (atomic testing)
         */
         assertEquals(page.getEmailText(), emailInputText);
+        Assert.fail("Failing test intentionally");
 
     }
 
