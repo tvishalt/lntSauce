@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="methods">
 	<test name="Test">
 		<classes>
-			<class name="com.sauceevaluation.SampleSauceTextInputTest"></class>
+			<class name="com.sauceevaluation.TestCasesClass"></class>
 		</classes>
 	</test>
 </suite>
