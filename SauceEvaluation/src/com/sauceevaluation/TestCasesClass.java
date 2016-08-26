@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
  * Created by mehmetgerceker on 12/7/15.
  */
 
-public class SampleSauceTextInputTest extends SampleSauceTestBase {
+public class TestCasesClass extends BaseClass {
 
     /**
      * Runs a simple test verifying if the email input is functional.
@@ -36,7 +36,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
         driver.get("https://saucelabs.com/test/guinea-pig");
 
         // get page object
-        GuineaPigPage page = GuineaPigPage.getPage(driver);
+        SitePage page = SitePage.getPage(driver);
 
         /*
          enterEmailText page is an exposed "service",
@@ -68,7 +68,7 @@ public class SampleSauceTextInputTest extends SampleSauceTestBase {
         driver.get("https://saucelabs.com/test/guinea-pig");
 
         // Navigate to the page
-        GuineaPigPage page = GuineaPigPage.getPage(driver);
+        SitePage page = SitePage.getPage(driver);
 
         /*
          enterCommentText page is an exposed "service",

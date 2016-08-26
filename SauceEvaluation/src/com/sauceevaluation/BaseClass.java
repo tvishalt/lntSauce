@@ -30,7 +30,7 @@ import com.saucelabs.testng.SauceOnDemandTestListener;
  * @author Neil Manvar
  */
 @Listeners({SauceOnDemandTestListener.class})
-public class SampleSauceTestBase implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider{
+public class BaseClass implements SauceOnDemandSessionIdProvider, SauceOnDemandAuthenticationProvider{
 
 	// Selenium URI -- static same for everyone.
 	public static String seleniumURI = null;

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.PageFactory;
  * Created by mehmetgerceker on 12/7/15.
  */
 
-public class GuineaPigPage extends PageBase {
+public class SitePage extends PageBase {
 //Test
 	@FindBy(id="unchecked_checkbox")
 	private WebElement uncheckedCheckbox;
@@ -36,8 +36,8 @@ public class GuineaPigPage extends PageBase {
 	@FindBy(id="submit")
 	private WebElement submitButton;
 
-	public static GuineaPigPage getPage(WebDriver driver) {
-		return PageFactory.initElements(driver, GuineaPigPage.class);
+	public static SitePage getPage(WebDriver driver) {
+		return PageFactory.initElements(driver, SitePage.class);
 	}
 
 	public void checkUncheckedCheckBox() {
