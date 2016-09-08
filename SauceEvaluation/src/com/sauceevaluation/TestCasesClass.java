@@ -30,6 +30,7 @@ public class TestCasesClass extends BaseClass {
         String emailInputText = "abc@gmail.com";
 
         this.createDriver(browser, version, os, method.getName());
+    
         WebDriver driver = this.getWebDriver();
 
         // Navigate to the page
