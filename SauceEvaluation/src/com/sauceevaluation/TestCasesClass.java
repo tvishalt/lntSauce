@@ -32,7 +32,6 @@ public class TestCasesClass extends BaseClass {
         this.createDriver(browser, version, os, method.getName());
     
         WebDriver driver = this.getWebDriver();
-
         // Navigate to the page
         driver.get("https://saucelabs.com/test/guinea-pig");
 
