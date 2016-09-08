@@ -1,7 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" > 
 <suite name="Suite" parallel="methods">
 	<test name="Test">
-		
+		<groups>
+	      <run>
+	      <include name="A" />
+	      </run>
+	   </groups>
 		<classes>
 			<class name="com.sauceevaluation.TestCasesClass"></class>
 		</classes>

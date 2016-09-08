@@ -165,7 +165,7 @@ public class BaseClass implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 		webDriver.get().quit();
 	}
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun= true)
 	public void setupSuite(){
 		//get the uri to send the commands to.
 		seleniumURI = SauceHelpers.buildSauceUri();
