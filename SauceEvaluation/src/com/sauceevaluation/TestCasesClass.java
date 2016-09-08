@@ -59,7 +59,7 @@ public class TestCasesClass extends BaseClass {
      * Runs a simple test verifying if the comment input is functional.
      * @throws InvalidElementStateException
      */
-    @Test(dataProvider = "hardCodedBrowsers1",groups="A")
+    @Test(dataProvider = "hardCodedBrowsers1")
     public void verifyCommentInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         
