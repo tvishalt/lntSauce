@@ -77,6 +77,15 @@ public class BaseClass implements SauceOnDemandSessionIdProvider, SauceOnDemandA
 		};
 	}
 
+	@DataProvider(name = "hardCodedBrowsers1", parallel = true)
+	public static Object[][] sauceBrowserDataProvider(Method testMethod) {
+		return new Object[][]{
+				new Object[]{"internet explorer", "11", "Windows 8.1"},
+				new Object[]{"chrome", "41", "Windows XP"},
+				new Object[]{"safari", "7", "OS X 10.9"},
+				new Object[]{"firefox", "35", "Windows 7"},
+		};
+	}
 	/**
 	 * @return the {@link WebDriver} for the current thread
 	 */
