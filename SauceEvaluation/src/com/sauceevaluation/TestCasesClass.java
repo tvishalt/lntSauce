@@ -27,7 +27,9 @@ public class TestCasesClass extends BaseClass {
  @Test(dataProvider = "hardCodedBrowsers")
     public void verifyEmailInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
-        String emailInputText = "abc@gmail.com";
+        
+	 	System.out.println("in test case 1");
+	 	String emailInputText = "abc@gmail.com";
 
         this.createDriver(browser, version, os, method.getName());
     
@@ -60,7 +62,9 @@ public class TestCasesClass extends BaseClass {
     @Test(dataProvider = "hardCodedBrowsers1")
     public void verifyCommentInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
-        String commentInputText = UUID.randomUUID().toString();
+        
+    	System.out.println("in test case 2");
+    	String commentInputText = UUID.randomUUID().toString();
 
         this.createDriver(browser, version, os, method.getName());
         WebDriver driver = this.getWebDriver();
