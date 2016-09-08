@@ -24,7 +24,7 @@ public class TestCasesClass extends BaseClass {
      * Runs a simple test verifying if the email input is functional.
      * @throws InvalidElementStateException
      */
- @Test(dataProvider = "hardCodedBrowsers")
+ //@Test(dataProvider = "hardCodedBrowsers")
     public void verifyEmailInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         
@@ -59,7 +59,7 @@ public class TestCasesClass extends BaseClass {
      * Runs a simple test verifying if the comment input is functional.
      * @throws InvalidElementStateException
      */
-    @Test(dataProvider = "hardCodedBrowsers1")
+    @Test(dataProvider = "hardCodedBrowsers1",groups="A")
     public void verifyCommentInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         
