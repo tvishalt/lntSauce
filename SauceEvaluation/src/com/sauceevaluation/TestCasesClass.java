@@ -24,11 +24,11 @@ public class TestCasesClass extends BaseClass {
      * Runs a simple test verifying if the email input is functional.
      * @throws InvalidElementStateException
      */
- @Test(dataProvider = "hardCodedBrowsers",groups="B")
+ //@Test(dataProvider = "hardCodedBrowsers",groups="B")
     public void verifyEmailInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         
-	 	System.out.println("in test case 1");
+	 	//System.out.println("in test case 1");
 	 	String emailInputText = "abc@gmail.com";
 
         this.createDriver(browser, version, os, method.getName());
@@ -63,7 +63,7 @@ public class TestCasesClass extends BaseClass {
     public void verifyCommentInputTest(String browser, String version, String os, Method method)
             throws MalformedURLException, InvalidElementStateException, UnexpectedException {
         
-    	System.out.println("in test case 2");
+    	//System.out.println("in test case 2");
     	String commentInputText = UUID.randomUUID().toString();
 
         this.createDriver(browser, version, os, method.getName());
