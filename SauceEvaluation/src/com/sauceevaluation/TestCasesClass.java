@@ -51,7 +51,7 @@ public class TestCasesClass extends BaseClass {
          Each test should be verifying one piece of functionality (atomic testing)
         */
         assertEquals(page.getEmailText(), emailInputText);
-       Assert.fail("Failing test intentionally");
+       //Assert.fail("Failing test intentionally");
 
     }
 
